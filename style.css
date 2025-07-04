@@ -1,404 +1,50 @@
-.encabezado {
-  background-color: #f7f4fa;
-  /* Suave lavanda */
-  text-align: center;
-  padding: 20px;
-}
-
-.encabezado img {
-  max-width: 150px;
-  height: auto;
-}
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">body {
-  font-family: 'Montserrat', sans-serif;
+/* ESTILOS GENERALES */
+body {
   margin: 0;
-  background-color: #fdfaf6;
-  color: #333;
-}
-
-#equipo {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-#equipo h2 {
-  color: #78C2AD;
-  margin-bottom: 40px;
-  font-size: 2em;
-}
-
-.equipo-member {
-  display: inline-block;
-  width: 220px;
-  margin: 20px;
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  vertical-align: top;
-  transition: transform 0.3s ease;
-}
-
-.equipo-member:hover {
-  transform: translateY(-5px);
-}
-
-.equipo-member img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.equipo-member h4 {
-  margin: 15px 0 10px;
-  color: #A393C1;
-}
-
-.equipo-member p {
-  font-size: 0.9em;
-  line-height: 1.4;
-  text-align: justify;
-}
-
-#contacto {
-  background-color: #f7f4fa;
-  /* Suave lavanda */
-  padding: 40px 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  margin: 50px auto;
-  max-width: 700px;
-}
-
-background-color: #f0eaff;
-padding: 50px 20px;
-text-align: center;
-}
-
-#contacto h2 {
-  color: #A393C1;
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-#contacto p {
-  color: #333;
-  margin-bottom: 20px;
-}
-
-#contacto form {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-#contacto input,
-#contacto textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
   font-family: 'Montserrat', sans-serif;
-}
-
-#contacto button {
-  background-color: #78C2AD;
-  color: white;
-  border: none;
-  padding: 12px;
-  font-size: 1em;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-transition: background-color 0.3s ease,
-transform 0.2s ease;
-
-#contacto button:hover {
-  background-color: #64ad98;
-}
-
-transform: scale(1.03);
-
-#contacto a {
-  color: #A393C1;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-#contacto i {
-  margin-right: 8px;
-  color: #A393C1;
-}
-
-#contacto i.fa-envelope {
-  color: #A393C1;
-  /* Morado del Instituto */
-}
-
-#contacto i.fa-whatsapp {
-  color: #25D366;
-  /* Verde WhatsApp oficial */
-}
-
-#blog {
-  background-color: #ffffff;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-#blog h2 {
-  color: #A393C1;
-  font-size: 2em;
-  margin-bottom: 30px;
-}
-
-#blog p {
-  color: #333;
-  margin-bottom: 30px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#blog ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#blog li {
-  margin: 15px 0;
-}
-
-#blog a {
-  color: #78C2AD;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-#blog a:hover {
-  color: #64ad98;
-}
-
-.card-blog {
-  background-color: #ffffff;
-  border: 1px solid #e0dbee;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.card-blog h3 {
-  color: #78C2AD;
-  margin-bottom: 10px;
-}
-
-.card-blog a {
-  color: #A393C1;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-#testimonios {
-  background-color: #fef6fb;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.testimonio {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.testimonio img {
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  margin-bottom: 15px;
-}
-
-.testimonio blockquote {
-  font-style: italic;
+  background-color: #fefefe;
   color: #4e4e4e;
-  margin: 0 0 10px;
 }
 
-.testimonio p {
-  color: #A393C1;
-  font-weight: bold;
+h1, h2, h3, h4 {
+  color: #5c3c92;
 }
 
-#blog {
+section {
   padding: 60px 20px;
-  background-color: #fdfbff;
-  /* fondo blanco suave */
   text-align: center;
 }
 
-#blog h2 {
-  font-size: 2em;
-  color: #A393C1;
-  margin-bottom: 40px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
 }
 
-.blog-grid {
-  display: flex;
-  flex-wrap: wrap;
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  justify-content: center;
+  justify-items: center;
 }
 
-.blog-card {
-  background-color: #ffffff;
-  border: 1px solid #e0dbe7;
-  border-radius: 12px;
-  width: 300px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  transition: transform 0.3s;
-}
-
-.blog-card:hover {
-  transform: scale(1.03);
-}
-
-.blog-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.blog-card h3 {
-  color: #4e4e4e;
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
-.blog-card p {
-  font-size: 0.95em;
-  color: #666;
-  margin-bottom: 15px;
-}
-
-.blog-card .leer-mas {
-  display: inline-block;
-  background-color: #78C2AD;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.blog-card .leer-mas:hover {
-  background-color: #64ad98;
-}
-
-* --- ESTILOS PARA LOS ARTÍCULOS DEL BLOG --- */ #blog-articulo {
-  background-color: #fffefc;
-  padding: 40px 30px;
-  max-width: 800px;
-  margin: 50px auto;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  color: #4e4e4e;
-  font-size: 1.1em;
-  line-height: 1.7;
-}
-
-#blog-articulo h1 {
-  color: #A393C1;
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 2.2em;
-}
-
-#blog-articulo img {
-  width: 100%;
-  border-radius: 12px;
-  margin: 20px 0;
-}
-
-#blog-articulo p {
-  margin-bottom: 20px;
-}
-
-#blog-articulo a {
-  display: inline-block;
-  margin-top: 30px;
-  color: #78C2AD;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-#blog-articulo a:hover {
-  text-decoration: underline;
-}
-
-#redes {
-  background-color: #f7f4fa;
-  /* Suave lavanda */
-  text-align: center;
-  padding: 30px 20px;
-  border-radius: 12px;
-  margin: 50px auto;
-  max-width: 700px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-#redes h2 {
-  color: #A393C1;
-  margin-bottom: 20px;
-  font-size: 1.8em;
-}
-
-.redes-links a {
-  display: inline-block;
-  margin: 12px 15px;
-  color: #A393C1;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1.2em;
-  transition: color 0.3s ease, transform 0.2s ease;
-}
-
-.redes-links a:hover {
-  color: #25D366;
-  /* Verde whatsapp */
-  transform: scale(1.1);
-}
-
-.redes-links i {
-  margin-right: 8px;
-}
-
+/* HERO (ENCABEZADO CON IMAGEN) */
 .hero {
   position: relative;
-    background-image: url("portada_optimizada.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-  }
+  background-image: url("portada_optimizada.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
 
 .hero-overlay {
   background-color: rgba(0, 0, 0, 0.4);
-  /* oscurece la imagen un poco */
   padding: 40px;
   border-radius: 10px;
 }
@@ -408,7 +54,6 @@ transform: scale(1.03);
   font-weight: 700;
   margin-bottom: 10px;
   color: #fff26a;
-  /* color amarillo llamativo */
 }
 
 .hero p {
@@ -417,6 +62,7 @@ transform: scale(1.03);
   color: #ffffff;
 }
 
+/* BOTONES */
 .boton-dorado {
   background-color: #f5b942;
   color: #fff;
@@ -429,4 +75,75 @@ transform: scale(1.03);
 
 .boton-dorado:hover {
   background-color: #d49f2c;
+}
+
+/* TARJETAS (AREAS Y BLOG) */
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 10px 10px;
+  color: #5c3c92;
+}
+
+.card p {
+  padding: 0 15px;
+}
+
+/* EQUIPO */
+.equipo-member {
+  background-color: #fff9f0;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.equipo-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.equipo-member h4 {
+  margin-top: 10px;
+  color: #3f3f3f;
+}
+
+/* TESTIMONIOS */
+.testimonial {
+  background-color: #e9e2f1;
+  border-radius: 12px;
+  padding: 25px;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.testimonial strong {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background-color: #5c3c92;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 0.9rem;
 }
