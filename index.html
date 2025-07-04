@@ -1,443 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<section class="hero">
-  <div class="hero-overlay">
-    <h1>Transformamos el bienestar de las familias</h1>
-    <p>Educación, prevención y acompañamiento para que florezca lo mejor de ti y de los tuyos 🌱</p>
-    <a href="#programas" class="boton-dorado">Ver nuestros programas</a>
-  </div>
-</section>
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Acompañamos a las familias a sanar, educar y reconectar desde el amor y la consciencia. Somos el Instituto para la Protección Integral de la Familia." />
-
-    <title>Instituto para la Protección Integral de la Familia</title>
-
-    <!-- Fuente tipográfica desde Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
-
-    <!-- Íconos Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-    <!-- ✅ AQUÍ enlazas tu archivo de estilos personalizado -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-
-    body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fdfaf6;
-      color: #333;
-    }
-
-    header {
-      background-color: #78C2AD;
-      padding: 20px;
-      text-align: center;
-      color: white;
-    }
-
-    header img {
-      max-height: 80px;
-    }
-
-    nav {
-      background-color: #A393C1;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      padding: 10px 0;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .hero {
-      background-color: #fff6e5;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      color: #4e4e4e;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-
-    .hero button {
-      background-color: #D4AF37;
-      border: none;
-      padding: 12px 25px;
-      color: white;
-      font-size: 1rem;
-      margin-top: 20px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-    .programas div {
-      background-color: #f4f1ec;
-      margin-bottom: 20px;
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    .cta {
-      background-color: #78C2AD;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .cta h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    .cta button {
-      background-color: #D4AF37;
-      color: white;
-      border: none;
-      padding: 12px 25px;
-      font-size: 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    footer {
-      background-color: #A393C1;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    form {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    form input,
-    form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    form button {
-      background-color: #78C2AD;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      font-size: 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .equipo {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-around;
-    }
-
-    .equipo-member {
-      flex: 1 1 220px;
-      background-color: #f9f7f3;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-    }
-
-    .equipo-member img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .equipo-member h4 {
-      margin: 10px 0 5px;
-      color: #4e4e4e;
-    }
-
-    .equipo-member p {
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 1.8rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-
-      nav {
-        flex-direction: column;
-      }
-    }
-  </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Acompañamos a las familias a sanar, educar y reconectar desde el amor y la conciencia. Somos el Instituto para la Protección Integral de la Familia." />
+  <title>Instituto para la Protección Integral de la Familia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
-    <img src="logo.jpg" alt="Logo del Instituto" />
-    <h1>Instituto para la Protección Integral de la Familia</h1>
+  <!-- ENCABEZADO CON IMAGEN DE FONDO -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <img src="logo.jpg" alt="Logo IPIF" class="logo" />
+      <h1>Transformamos el bienestar de las familias 🌱</h1>
+      <p>Educación, prevención y acompañamiento para que florezca lo mejor de ti y de los tuyos</p>
+      <a href="#programas" class="boton-dorado">Ver nuestros programas</a>
+    </div>
   </header>
 
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#quienes">Quiénes somos</a>
-    <a href="#equipo">Nuestro Equipo</a>
-    <a href="#programas">Programas</a>
-    <a href="#testimonios">Testimonios</a>
-    <a href="#blog">Blog</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-
-  <section id="inicio" class="hero">
-    <h1>Donde las familias florecen 🌱</h1>
-    <p>Sanamos heridas, fortalecemos vínculos y creamos futuros felices.</p>
-    <button>Quiero saber más</button>
+  <!-- SECCIÓN: ÁREAS DE TRABAJO -->
+  <section id="areas">
+    <h2>Áreas de Trabajo</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200?text=Escuela+de+Padres" alt="Escuela de Padres" />
+        <h3>Escuela de Padres Conscientes</h3>
+        <p>Formación emocional, espiritual y práctica para madres y padres comprometidos.</p>
+        <a href="https://wa.me/525547918191" class="boton-dorado">Inscribirme</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200?text=Ni%C3%B1os+y+Adolescentes" alt="Niños y adolescentes" />
+        <h3>Niñas, Niños y Adolescentes</h3>
+        <p>Desarrollamos habilidades internas desde la infancia para una vida plena.</p>
+        <a href="https://wa.me/525547918191" class="boton-dorado">Inscribirme</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200?text=Integraci%C3%B3n+Familiar" alt="Integración Familiar" />
+        <h3>Integración y Armonía Familiar</h3>
+        <p>Intervenciones terapéuticas sistémicas para sanar los vínculos familiares.</p>
+        <a href="https://wa.me/525547918191" class="boton-dorado">Inscribirme</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200?text=Protecci%C3%B3n+y+Prevenci%C3%B3n"
+          alt="Protección y Prevención" />
+        <h3>Seguridad y Prevención Familiar</h3>
+        <p>Programas para identificar riesgos, prevenir violencia y promover vínculos sanos.</p>
+        <a href="https://wa.me/525547918191" class="boton-dorado">Inscribirme</a>
+      </div>
+    </div>
   </section>
 
-  <section id="quienes">
-    <h2>Un equipo profesional con corazón</h2>
-    <p>Somos psicólogos, madres, padres y soñadores con más de 16 años de experiencia. Creamos este Instituto para
-      acompañarte con respeto, amor y ciencia. Aquí no venimos a corregirte, venimos a acompañarte.</p>
-  </section>
-
+  <!-- SECCIÓN: EQUIPO -->
   <section id="equipo">
-    <h2>Conoce a nuestro equipo</h2>
-
-    <div class="equipo-member">
-      <img src="barbara.jpg" alt="Lic. Bárbara Dulché">
-      <h4>Psic. Bárbara Dulché</h4>
-      <p>Psicóloga por la UNAM, especializada en terapia sistémica, PNL, psicología forense y tanatología. Fundadora del
-        Instituto Integral del Bienestar Familiar...</p>
-    </div>
-
-    <div class="equipo-member">
-      <img src="evelin.jpg" alt="Lic. Evelin Hernández">
-      <h4>Psic. Evelin Hernández</h4>
-      <p>Psicóloga por la FES Zaragoza (UNAM) con especialidad en Terapia Sistémica y más de 12 años de experiencia en
-        orientación educativa y terapia con adolescentes...</p>
-    </div>
-
-    <div class="equipo-member">
-      <img src="marisol.jpg" alt="Psic. Marisol Ruíz">
-      <h4>Psic. Marisol Ruíz</h4>
-      <p>Psicóloga por la UNAM, con Maestría en Psicología Infantil y formación en Terapia Familiar Sistémica. Más de 15
-        años de experiencia clínica...</p>
-    </div>
-
-    <div class="equipo-member">
-      <img src="carlos.jpg" alt="Lic. Carlos Robledo">
-      <h4>Psic. Carlos Robledo</h4>
-      <p>Psicólogo por la UAM, especialista en psicología forense y seguridad. Docente en UNAM y Colegio de Psicología
-        Criminal y Forense...</p>
+    <h2>Conócenos</h2>
+    <div class="grid grid-2x2">
+      <div class="equipo-member">
+        <img src="evelin.jpg" alt="Evelin" />
+        <h4>Evelin</h4>
+        <p>Especialista en niños y adolescentes</p>
+      </div>
+      <div class="equipo-member">
+        <img src="carlos.jpg" alt="Carlos" />
+        <h4>Carlos</h4>
+        <p>Prevención y entornos escolares</p>
+      </div>
+      <div class="equipo-member">
+        <img src="marisol.jpg" alt="Marisol" />
+        <h4>Marisol</h4>
+        <p>Psicoterapia familiar y adultos</p>
+      </div>
+      <div class="equipo-member">
+        <img src="barbara.jpg" alt="Bárbara" />
+        <h4>Bárbara</h4>
+        <p>Especialista en espiritualidad y familias</p>
+      </div>
     </div>
   </section>
 
-
-  <section id="contacto">
-    <h2>Contáctanos</h2>
-    <p>¿Tienes dudas, quieres agendar una sesión o saber más de nuestros programas? ¡Escríbenos!</p>
-    <form>
-      <input type="text" placeholder="Tu nombre" required />
-      <input type="email" placeholder="Tu correo electrónico" required />
-      <textarea placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
-      <button type="submit">Enviar mensaje</button>
-    </form>
-    <p>O mándanos un WhatsApp directo 👉 <a href="https://wa.me/525547918191" target="_blank">Click aquí</a></p>
-  </section>
-
-  <section id="programas">
-    <h2>Áreas de Trabajo y Programas Estrella</h2>
-    <p>En el Instituto para la Protección Integral de la Familia trabajamos a través de 4 grandes áreas, cada una
-      diseñada para abordar las distintas etapas y necesidades del desarrollo familiar. Nuestra atención es integral,
-      amorosa y profundamente profesional.</p>
-
-    <div class="programa-area">
-      <img src="area1.jpg" alt="Imagen Crecimiento con amor"
-        style="width:100%; border-radius:10px; margin-bottom:15px;">
-      <h3>Área 1: Crecimiento con amor</h3>
-      <p><strong>Escuela para padres conscientes</strong></p>
-      <p>Esta área está dedicada a acompañar a madres y padres que desean transformarse interiormente para guiar a sus
-        hijos con mayor sabiduría, empatía y conexión emocional. Aquí fortalecemos el vínculo con nuestros hijos desde
-        el ejemplo y el crecimiento personal.</p>
-      <ul>
-        <li>Programa “Un camino de crecimiento juntos”</li>
-        <li>Talleres temáticos para padres</li>
-        <li>Psicoterapia individual y de pareja</li>
-      </ul>
-    </div>
-
-    <div class="programa-area">
-      <img src="area2.jpg" alt="Imagen Descubre tu luz" style="width:100%; border-radius:10px; margin-bottom:15px;">
-      <h3>Área 2: Descubre tu luz</h3>
-      <p><strong>Escuela para niños y adolescentes</strong></p>
-      <p>Este espacio empodera a niñas, niños y adolescentes para que reconecten con su esencia, fortalezcan su
-        autoestima y aprendan a gestionar sus emociones. Usamos herramientas lúdicas, energéticas y educativas que los
-        preparan para una vida más feliz y consciente.</p>
-      <ul>
-        <li>Programa “Descubre tu poder interior”</li>
-      </ul>
-    </div>
-
-    <div class="programa-area">
-      <img src="area3.jpg" alt="Imagen Unidos por la familia"
-        style="width:100%; border-radius:10px; margin-bottom:15px;">
-      <h3>Área 3: Unidos por la familia: integración y armonía familiar</h3>
-      <p><strong>Intervención familiar</strong></p>
-      <p>En esta área fortalecemos la conexión entre los miembros de la familia. Sanamos heridas, rompemos patrones
-        disfuncionales y creamos dinámicas más sanas, basadas en el respeto, la comunicación y el amor genuino entre
-        padres e hijos.</p>
-      <ul>
-        <li>Programa “Padres plenos & hijos felices”</li>
-      </ul>
-    </div>
-
-    <div class="programa-area">
-      <img src="area4.jpg" alt="Imagen Escudo familiar" style="width:100%; border-radius:10px; margin-bottom:15px;">
-      <h3>Área 4: Escudo familiar: Seguridad, amor y protección</h3>
-      <p><strong>Prevención de riesgos y fortalecimiento del entorno familiar</strong></p>
-      <p>Esta área brinda herramientas para proteger a nuestras hijas e hijos frente a los riesgos del entorno digital y
-        social. Educamos a las familias para que se conviertan en espacios seguros donde el respeto, la conciencia y el
-        autocuidado sean la base.</p>
-      <ul>
-        <li>Programa “Familias en alerta”</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="terapia" class="terapia">
-    <h2>¿Necesitas psicoterapia individual o familiar?</h2>
-    <p>Ofrecemos sesiones en línea o presenciales para adultos, adolescentes y familias. La psicoterapia tiene una
-      duración de 50 minutos y un costo de $600 MXN por sesión.</p>
-    <p>Déjanos tus datos o agenda tu cita. Estamos para acompañarte con amor y profesionalismo.</p>
-    <form action="https://api.whatsapp.com/send" method="get" target="_blank">
-      <input type="hidden" name="phone" value="525547918191">
-      <input type="hidden" name="text" value="Hola, quiero agendar una cita de psicoterapia. Mis datos son:">
-      <input type="text" placeholder="Tu nombre" required />
-      <input type="email" placeholder="Tu correo electrónico" required />
-      <input type="tel" placeholder="Tu número de WhatsApp" required />
-      <textarea placeholder="Cuéntanos brevemente tu situación" rows="4"></textarea>
-      <button type="submit">Agendar por WhatsApp</button>
-    </form>
-  </section>
-
-
-  <section id="testimonios">
-    <h2>Lo que dicen nuestras familias 💬</h2>
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/tusVideoID" frameborder="0"
-      allowfullscreen></iframe>
-    <p>“Gracias al Instituto, hoy nuestra familia se comunica mejor y vivimos con más armonía.”</p>
-    <p>“Me sentí acompañada y entendida como mamá. ¡Gracias por tanto amor y profesionalismo!”</p>
-  </section>
-
+  <!-- SECCIÓN: BLOG -->
   <section id="blog">
-    <h2>Conoce más en nuestro Blog 🧠</h2>
-    <div class="blog-grid">
-
-      <!-- TARJETA 1 -->
-      <div class="blog-card">
-        <img src="https://via.placeholder.com/300x180?text=Emociones" alt="Imagen artículo 1">
-        <h3>¿Cómo hablar con tus hijos sobre emociones?</h3>
-        <p>Una guía práctica para abrir el corazón en familia.</p>
-        <a href="emociones.html" class="leer-mas">Leer más</a>
-      </div>
-
-      <!-- TARJETA 2 -->
-      <div class="blog-card">
-
-        <img src="juegos_en_familia.jpg" alt="Imagen Juegos en familia">
+    <h2>Blog</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="juegos_en_familia.jpg" alt="Juegos que sanan" />
         <h3>Juegos en familia que sanan vínculos</h3>
-        <p>3 ideas divertidas para reconectar desde el amor y la risa.</p>
-        <a href="juegos_en_familia.html" class="leer-mas">Leer más</a>
+        <p>Descubre cómo los juegos pueden fortalecer el lazo emocional entre padres e hijos.</p>
+        <a href="juegos_en_familia.html" class="boton-dorado">Leer más</a>
       </div>
-
+      <div class="card">
+        <img src="emociones.jpg" alt="Hablar de emociones" />
+        <h3>¿Cómo hablar con tus hijos sobre emociones?</h3>
+        <p>Una guía sencilla para abrir la conversación emocional desde casa.</p>
+        <a href="emociones.html" class="boton-dorado">Leer más</a>
+      </div>
     </div>
   </section>
 
-
-  <section id="contacto">
-    <h2>Contáctanos</h2>
-    <p><strong><i class="fas fa-envelope"></i> Correo:</strong> <a
-        href="mailto:ipifoficial@gmail.com">ipifoficial@gmail.com</a></p>
-    <p><strong><i class="fab fa-whatsapp"></i> WhatsApp:</strong> <a href="https://wa.me/525547918191"
-        target="_blank">+52 55 4791 8191</a></p>
-  </section>
-
-  <form>
-    <input type="text" placeholder="Tu nombre" required />
-    <input type="email" placeholder="Tu correo electrónico" required />
-    <textarea placeholder="¿En qué podemos ayudarte?" rows="4"></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-  </section>
-
-  <section class="cta">
-    <h2>¿Listo para comenzar tu transformación?</h2>
-    <button>Escríbenos por WhatsApp</button>
-  </section>
-
-  <!-- 🔗 Redes sociales -->
-  <section id="redes">
-    <h2>Síguenos en redes sociales 💫</h2>
-    <div class="redes-links">
-      <a href="https://www.instagram.com/ipifoficial" target="_blank">
-        <i class="fab fa-instagram"></i> Instagram
-      </a>
-      <a href="https://www.facebook.com/ipifoficial" target="_blank">
-        <i class="fab fa-facebook"></i> Facebook
-      </a>
-      <a href="mailto:ipifoficial@gmail.com">
-        <i class="fas fa-envelope"></i> Correo
-      </a>
-      <a href="https://wa.me/525547918191" target="_blank">
-        <i class="fab fa-whatsapp"></i> WhatsApp
-      </a>
+  <!-- SECCIÓN: TESTIMONIOS -->
+  <section id="testimonios">
+    <h2>Lo que dicen de nosotros</h2>
+    <div class="grid">
+      <div class="testimonial">
+        <p>“Gracias al Instituto, mi familia ahora se comunica mejor y vivimos con más armonía.”</p>
+        <strong>- Mariana, mamá de 2</strong>
+      </div>
+      <div class="testimonial">
+        <p>“Los programas nos ayudaron a sanar heridas profundas con mucho amor y guía.”</p>
+        <strong>- Ricardo y Ana</strong>
+      </div>
     </div>
   </section>
 
+  <!-- PIE DE PÁGINA -->
   <footer>
     <p>&copy; 2025 Instituto para la Protección Integral de la Familia</p>
   </footer>
 </body>
 
 </html>
-
-<section id="testimonios">
-  <h2>Lo que dicen las familias</h2>
-  <div class="testimonio">
-    <img src="barbara.jpg" alt="Foto mamá feliz" />
-    <blockquote>
-      “Este programa transformó nuestra dinámica familiar. ¡Gracias por tanto amor!”
-    </blockquote>
-    <p>- Mariana R., mamá de 2 adolescentes</p>
-  </div>
-</section>
