@@ -383,3 +383,51 @@ transform: scale(1.03);
 .redes-links i {
   margin-right: 8px;
 }
+
+.hero {
+  position: relative;
+    background-image: url("portada_optimizada.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  /* oscurece la imagen un poco */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff26a;
+  /* color amarillo llamativo */
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.boton-dorado {
+  background-color: #f5b942;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-dorado:hover {
+  background-color: #d49f2c;
+}
