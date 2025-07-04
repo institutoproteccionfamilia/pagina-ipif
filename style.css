@@ -1,143 +1,220 @@
-/* GENERAL */
+/* RESET Y ESTILOS BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  background-color: #fdfaf6;
-  color: #333;
+  background-color: #e4e4e4;
+  color: #4e4e4e;
+  line-height: 1.6;
 }
-
-/* ENCABEZADO */
-.hero {
-  position: relative;
-  background-image: url('portada_optimizada.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  color: #fff;
+h1, h2, h3, h4 {
+  color: #5c3c92;
+  line-height: 1.2;
 }
-
-.hero-overlay {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 30px;
-  border-radius: 20px;
+h1 {
+  font-weight: 700;
 }
-
-.hero img.logo {
-  max-width: 120px;
-  margin-bottom: 20px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-}
-
-.hero h1 {
-  font-size: 2.4rem;
-  margin-bottom: 10px;
-  color: #fff8e7;
-}
-
-.hero p {
-  font-size: 1.1rem;
+h2 {
+  font-weight: 600;
   margin-bottom: 20px;
 }
-
-/* BOTONES */
-.boton-dorado {
-  background-color: #D4AF37;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: background-color 0.3s ease;
+h3 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-top: 15px;
 }
-
-.boton-dorado:hover {
-  background-color: #c9a327;
+h4 {
+  font-weight: 600;
 }
-
-/* PROGRAMAS / SERVICIOS */
-#programas {
-  background-color: #f4f4f9;
+p {
+  margin-bottom: 15px;
+}
+section {
   padding: 60px 20px;
   text-align: center;
 }
 
-#programas h2 {
-  color: #5c3c92;
-  margin-bottom: 40px;
+/* SECCIÓN HERO */
+.hero {
+  background: url('portada_optimizad.jpg') no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+}
+.hero-overlay {
+  background-color: rgba(92, 60, 146, 0.7);
+  padding: 100px 20px;
+}
+.hero .logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+.hero h1 {
   font-size: 2.2rem;
+  margin-bottom: 20px;
 }
-
-.programas-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  padding: 0 20px;
-}
-
-.programa-box {
-  background-color: #ffffff;
-  border: 2px solid #e5e5e5;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-}
-
-.programa-box:hover {
-  transform: translateY(-5px);
-}
-
-.programa-box h3 {
-  color: #333;
-  font-size: 1.4rem;
-  margin-bottom: 12px;
-}
-
-.programa-box p {
-  font-size: 1rem;
-  color: #555;
-}
-
-/* TESTIMONIOS */
-.testimonios {
-  background-color: #f0f8ff;
-  padding: 50px 20px;
-}
-
-.testimonios h2 {
-  font-size: 2rem;
+.hero p {
+  font-size: 1.2rem;
   margin-bottom: 30px;
+}
+
+/* BOTONES */
+a {
+  text-decoration: none;
   color: #5c3c92;
 }
-
-.testimonial {
-  max-width: 600px;
-  margin: 0 auto 30px auto;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 12px;
-  font-style: italic;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+.boton, .boton-dorado {
+  display: inline-block;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.boton.llamado {
+  background-color: #5c3c92;
+  color: #ffffff;
+}
+.boton-dorado {
+  background-color: #f1c40f;
+  color: #000000;
+}
+.boton-dorado:hover, .boton.llamado:hover {
+  opacity: 0.9;
 }
 
+/* LAYOUT GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+/* RESPONSIVO: EQUIPO 2x2 A 1x4 EN MÓVIL */
+@media (max-width: 600px) {
+  .grid-2x2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* TARJETAS (PROGRAMAS Y BLOG) */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.card h3 {
+  font-size: 1.2rem;
+  margin: 15px 0 10px;
+}
+.card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* SECCIÓN EQUIPO */
+.equipo-member {
+  text-align: center;
+}
+.equipo-member h4 {
+  margin-top: 10px;
+  color: #3f3f3f;
+}
+.equipo-member p {
+  font-size: 0.95rem;
+}
+.equipo-member img {
+  max-width: 200px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* SECCIÓN TESTIMONIOS */
+.testimonial {
+  background-color: #e9f2f1;
+  border-radius: 12px;
+  padding: 25px;
+  font-style: italic;
+  font-size: 1rem;
+  margin: 20px auto;
+  max-width: 800px;
+}
+.testimonial p {
+  margin-bottom: 0;
+}
 .testimonial strong {
   display: block;
   margin-top: 10px;
-  color: #5c3c92;
+  font-weight: 700;
 }
 
-/* FOOTER */
+/* LISTA ¿POR QUÉ ELEGIRNOS? */
+#porque strong {
+  color: #5c3c92;
+}
+#porque ul {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+#porque li {
+  margin-bottom: 15px;
+}
+#porque li i {
+  color: #5c3c92;
+  margin-right: 8px;
+}
+
+/* SECCIÓN FAQ */
+#faq .faq-item {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+#faq .faq-item h3 {
+  margin-bottom: 5px;
+}
+#faq .faq-item p {
+  margin-bottom: 0;
+}
+
+/* ICONOS REDES SOCIALES */
+#social .fa-brands {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  color: #5c3c92;
+}
+#social .fa-brands:hover {
+  color: #3f2d78;
+}
+
+/* PIE DE PÁGINA */
 footer {
   background-color: #5c3c92;
-  color: #fff;
+  color: #ffffff;
+  text-align: center;
   padding: 20px;
   font-size: 0.9rem;
-  text-align: center;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
 }
