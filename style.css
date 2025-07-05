@@ -1,235 +1,131 @@
+/* FUENTE GENERAL */
 body {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #fefaf7;
+  padding: 0;
+  background-color: #f8f9fa;
   color: #4e4e4e;
 }
 
 h1, h2, h3, h4 {
-  font-weight: 600;
-  color: #4e2a84;
+  color: #2d2d2d;
 }
 
-p {
-  line-height: 1.6;
-  margin-bottom: 1em;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.container {
-  width: 90%;
+/* BOTÓN DORADO */
+.boton-dorado {
+  background-color: #d4af37;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.boton-dorado:hover {
+  background-color: #b9931a;
+}
+
+/* HERO / PORTADA */
+.hero {
+  background: url("portada.png") center center/cover no-repeat;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-overlay {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 40px;
+  text-align: center;
+  max-width: 700px;
+  border-radius: 15px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* SECCIONES GENERALES */
+section {
+  padding: 50px 20px;
   max-width: 1200px;
   margin: auto;
 }
-
-section {
-  padding: 60px 0;
-}
-
-/* ===========================
-   PORTADA PRINCIPAL
-=========================== */
-.hero {
-  background: url('portada.png') center/cover no-repeat;
-  color: #fff;
+section h2 {
   text-align: center;
-  padding: 180px 20px 140px;
+  margin-bottom: 40px;
 }
 
-.hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-}
-
-.hero p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: auto;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-.hero .btn {
-  margin-top: 30px;
-  padding: 12px 30px;
-  background-color: #f0c000;
-  color: #000;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-}
-
-/* ===========================
-   PROGRAMAS ESTRELLA
-=========================== */
-.program-card {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.program-card:hover {
-  transform: translateY(-5px);
-}
-
-.program-card h3 {
-  color: #4e2a84;
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-
-.program-card p {
-  font-size: 0.95rem;
-}
-
-.btn-yellow {
-  background-color: #f0c000;
-  border: none;
-  color: #000;
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 15px;
-}
-
-/* ===========================
-   CONÓCENOS / EQUIPO
-=========================== */
-.team-container {
+/* GRIDS Y CARDS */
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
+  gap: 20px;
 }
-
-.team-card {
-  background-color: #ffffff;
-  border-radius: 16px;
+.grid-2x2 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card {
+  background-color: white;
+  border-radius: 15px;
   padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
 }
-
-.team-card img {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 100%;
-  margin-bottom: 15px;
-}
-
-.team-card h4 {
-  margin-bottom: 5px;
-  color: #4e2a84;
-}
-
-.team-card p {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* ===========================
-   TESTIMONIOS
-=========================== */
-.testimonials {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  background-color: #eef9f8;
-  padding: 60px 20px;
-}
-
-.testimonial-card {
-  background-color: #ffffff;
-  border-left: 6px solid #b089f9;
-  padding: 20px 30px;
-  border-radius: 12px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
-  font-style: italic;
-}
-
-/* ===========================
-   FORMULARIO Y CONTACTO
-=========================== */
-form {
-  max-width: 600px;
-  margin: auto;
-}
-
-form input,
-form textarea {
+.card img {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-family: inherit;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-form button {
-  background-color: #4e2a84;
-  color: #fff;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 6px;
-  font-weight: bold;
-}
-
-/* ===========================
-   PIE DE PÁGINA
-=========================== */
-footer {
-  background-color: #4e2a84;
-  color: #fff;
+/* EQUIPO */
+.equipo-member {
   text-align: center;
-  padding: 40px 20px;
-  font-size: 0.9rem;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-
-footer a {
-  color: #f0c000;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-.social-icons a {
-  font-size: 1.3rem;
-  margin: 0 10px;
-  display: inline-block;
-}
-
-/* ===========================
-   BLOG CARDS
-=========================== */
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.blog-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
-
-.blog-card h4 {
-  font-size: 1.1rem;
+.equipo-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
   margin-bottom: 10px;
-  color: #4e2a84;
 }
 
-.blog-card p {
-  font-size: 0.95rem;
-  color: #555;
+/* TESTIMONIOS */
+.testimonial {
+  background-color: #fff;
+  padding: 25px;
+  border-left: 5px solid #d4af37;
+  font-style: italic;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
 }
