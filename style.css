@@ -1,126 +1,166 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Acompañamos a las familias a sanar, educar y reconectar desde el amor y la conciencia. Somos el Instituto para la Protección Integral de la Familia." />
-  <title>Instituto para la Protección Integral de la Familia</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
-</head>
+/* Estilos globales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f6f1;
+  color: #4e4e4e;
+  margin: 0;
+  padding: 0;
+}
 
-<body>
-  <!-- ENCABEZADO -->
-  <header class="hero">
-    <div class="hero-overlay">
-      <h1>Transformamos el bienestar de las familias 🌱</h1>
-      <p>Educación, prevención y acompañamiento para que florezca lo mejor de ti y de los tuyos</p>
-      <a href="#programas" class="boton-dorado">Ver nuestros programas</a>
-    </div>
-  </header>
+h1, h2, h3, h4, h5, h6 {
+  color: #5a4080;
+  margin-top: 0;
+}
 
-  <!-- SECCIÓN: ÁREAS DE TRABAJO / PROGRAMAS -->
-  <section id="programas">
-    <h2>Programas Estrella</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://via.placeholder.com/400x200?text=Padres" alt="Padres" />
-        <h3>Un Camino de Crecimiento Juntos</h3>
-        <p>Escuela para padres comprometidos con su evolución personal y el bienestar emocional de sus hijos.</p>
-        <a href="https://wa.me/525547918191" class="boton-dorado">Inscribirme</a>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/400x200?text=Niños+y+Adolescentes" alt="Niños" />
-        <h3>Descubre tu Poder Interior</h3>
-        <p>Programa emocional y espiritual para niños y adolescentes, con herramientas prácticas para su bienestar.</p>
-        <a href="https://wa.me/525547918191" class="boton-dorado">Inscribirme</a>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/400x200?text=Familia" alt="Familia" />
-        <h3>Padres Plenos & Hijos Felices</h3>
-        <p>Reconstrucción familiar y mejora de vínculos desde el amor, el respeto y la comunicación consciente.</p>
-        <a href="https://wa.me/525547918191" class="boton-dorado">Inscribirme</a>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/400x200?text=Prevención" alt="Prevención" />
-        <h3>Familias en Alerta</h3>
-        <p>Prevención de riesgos digitales, ciberacoso, uso excesivo de pantallas y relaciones familiares saludables.</p>
-        <a href="https://wa.me/525547918191" class="boton-dorado">Inscribirme</a>
-      </div>
-    </div>
-  </section>
+p {
+  line-height: 1.6;
+  margin: 0.5em 0;
+}
 
-  <!-- SECCIÓN: EQUIPO -->
-  <section id="equipo">
-    <h2>Conoce al equipo</h2>
-    <div class="grid grid-2x2">
-      <div class="equipo-member">
-        <img src="evelin.jpg" alt="Evelin" />
-        <h4>Evelin</h4>
-        <p>Psicóloga con 17 años de experiencia. Especialista en niños y adolescentes. Escucha, empatía y ternura.</p>
-      </div>
-      <div class="equipo-member">
-        <img src="carlos.jpg" alt="Carlos" />
-        <h4>Carlos</h4>
-        <p>Psicólogo educativo y escolar. Experto en prevención y entornos escolares sanos y seguros.</p>
-      </div>
-      <div class="equipo-member">
-        <img src="marisol.jpg" alt="Marisol" />
-        <h4>Marisol</h4>
-        <p>Psicoterapeuta familiar. Acompaña a adultos, parejas y familias a sanar desde un enfoque sistémico.</p>
-      </div>
-      <div class="equipo-member">
-        <img src="barbara.jpg" alt="Bárbara" />
-        <h4>Bárbara</h4>
-        <p>Psicoterapeuta espiritual. Especialista en familias, vínculos sagrados y crecimiento personal.</p>
-      </div>
-    </div>
-  </section>
+header, footer {
+  background-color: #8d79b9;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+}
 
-  <!-- SECCIÓN: BLOG -->
-  <section id="blog">
-    <h2>Blog</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="juegos_en_familia.jpg" alt="Juegos que sanan" />
-        <h3>Juegos en familia que sanan vínculos</h3>
-        <p>Descubre cómo los juegos pueden fortalecer el lazo emocional entre padres e hijos.</p>
-        <a href="juegos_en_familia.html" class="boton-dorado">Leer más</a>
-      </div>
-      <div class="card">
-        <img src="emociones.jpg" alt="Hablar de emociones" />
-        <h3>¿Cómo hablar con tus hijos sobre emociones?</h3>
-        <p>Una guía sencilla para abrir la conversación emocional desde casa.</p>
-        <a href="emociones.html" class="boton-dorado">Leer más</a>
-      </div>
-    </div>
-  </section>
+main {
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
 
-  <!-- SECCIÓN: TESTIMONIOS -->
-  <section id="testimonios">
-    <h2>Lo que dicen las familias</h2>
-    <div class="grid">
-      <div class="testimonial">
-        <p>“Gracias al Instituto, mi familia ahora se comunica mejor y vivimos con más armonía.”</p>
-        <strong>- Mariana, mamá de 2</strong>
-      </div>
-      <div class="testimonial">
-        <p>“Los programas nos ayudaron a sanar heridas profundas con mucho amor y guía.”</p>
-        <strong>- Ricardo y Ana</strong>
-      </div>
-    </div>
-  </section>
+.section {
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  margin: 1rem 0;
+  border-radius: 16px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
 
-  <!-- PIE DE PÁGINA -->
-  <footer>
-    <p>&copy; 2025 Instituto para la Protección Integral de la Familia</p>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/IPIFoficial/" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com/IPIFoficial/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="mailto:ipifoficial@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://wa.me/525547918191" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    </div>
-  </footer>
-</body>
-</html>
+.button {
+  background-color: #f9c51c;
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background-color: #e0b218;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  margin: 1rem;
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.profile-box {
+  text-align: center;
+  margin: 1rem;
+  max-width: 260px;
+}
+
+.profile-box img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial {
+  background-color: #e6f8f7;
+  border-left: 6px solid #8d79b9;
+  padding: 1rem 2rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  font-style: italic;
+  border-radius: 12px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.6rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f9c51c;
+}
+
+.blog-card {
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  max-width: 540px;
+  flex: 1 1 45%;
+  margin: 1rem auto;
+  text-align: left;
+}
+
+.blog-card h4 {
+  color: #5a4080;
+  margin-bottom: 0.6rem;
+}
+
+.blog-card p {
+  font-size: 0.95rem;
+}
+
+.blog-card .button {
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-card {
+    max-width: 100%;
+  }
+}
